@@ -5,5 +5,7 @@
     <color name="yellow"> #FFFC00 </color>
     <color name="red"> #FF0000 </color>
     <color name="blue"> #0000FF </color>
+    <color name="grey"> #D8D8D8 </color>
+    <color name="greyNew"> #808080 </color>
 
 </resources>

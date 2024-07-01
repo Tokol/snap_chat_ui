@@ -1,30 +1,209 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <ImageView
-        android:id="@+id/imageLogo"
-        android:layout_width="wrap_content"
-        android:layout_height="80dp"
-        android:layout_marginTop="10dp"
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
         android:src="@drawable/logo_yellow"
+        android:layout_marginTop="20dp"
 
         />
 
-
     <TextView
+        android:id="@+id/textSignup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Sign Up"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
         android:textStyle="bold"
         android:textSize="24sp"
-        android:layout_below="@+id/imageLogo"
-        android:layout_centerHorizontal="true"
         />
 
+    <TextView
+        android:id="@+id/msgAd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="to create your first ad"
+        android:layout_below="@+id/textSignup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        />
+
+    <TextView
+        android:id="@+id/firstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="First Name"
+        android:layout_below="@+id/msgAd"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="8dp"
+        />
+
+
+    <EditText
+        android:id="@+id/editFirstName"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:background="@color/grey"
+        android:layout_below="@+id/firstName"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="2dp"
+        />
+
+    <TextView
+        android:id="@+id/lastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Last Name"
+        android:layout_below="@+id/msgAd"
+        android:layout_toRightOf="@+id/firstName"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="2dp" />
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/lastName"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@+id/editFirstName"
+        android:background="@color/grey"
+        />
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:layout_below="@+id/editFirstName"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp" />
+
+    <EditText
+        android:id="@+id/editUserName"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="2dp"
+        android:layout_below="@+id/userName"
+        android:background="@color/grey"
+        />
+
+    <TextView
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:layout_below="@+id/editUserName"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp" />
+
+    <EditText
+        android:id="@+id/editPassword"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="2dp"
+        android:layout_below="@+id/password"
+        android:background="@color/grey"
+        />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:layout_below="@+id/editPassword"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp" />
+
+    <EditText
+        android:id="@+id/editEmail"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/email"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="2dp"
+
+        android:background="@color/grey"
+        />
+
+    <TextView
+        android:id="@+id/birthday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Birthday"
+        android:layout_below="@id/editEmail"
+        android:layout_marginTop="2dp"
+        android:layout_marginHorizontal="8dp"
+        />
+    <EditText
+        android:id="@+id/editBirthdayMonth"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="2dp"
+        android:layout_below="@+id/birthday"
+        android:background="@color/grey"
+        android:hint="Month"
+        android:textColorHint="@color/black"
+
+        />
+    <EditText
+        android:id="@+id/editBirthdayDay"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="2dp"
+        android:layout_below="@id/birthday"
+        android:layout_toRightOf="@+id/editBirthdayMonth"
+        android:background="@color/grey"
+        android:hint="Day"
+
+        />
+
+    <EditText
+        android:id="@+id/editBirthdayYear"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="2dp"
+        android:layout_below="@id/birthday"
+        android:layout_toRightOf="@+id/editBirthdayDay"
+        android:background="@color/grey"
+        android:hint="Year"
+
+        />
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:id="@+id/snapText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="By tapping Sign Up &amp; Accept, you acknowledge that \n you have read the Privacy Policy and agree to the Terms of Service. Snapchatters can always capture or save your messages, such as by taking a screenshot or using a camera. Be mindful of what you Snap!"
+        android:layout_below="@id/editBirthdayMonth"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        />
+
+    <Button
+        android:id="@+id/signupBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/snapText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Sign Up &amp; Accept"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/yellow"
+        android:textStyle="bold"/>
 
 
 

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <TableRow android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/grey"
+            >
+
+
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome To SnapChat"
+
+                />
+
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" name: "
+
+                />
+
+
+
+        </TableRow>
+
+
+    <TableRow android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/yellow"
+
+        >
+
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome To SnapChat"
+
+            />
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" name: "
+
+            />
+
+
+    </TableRow>
+
+    <TableRow >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile "
+
+            />
+
+    </TableRow>
+
+
+
+</TableLayout>
